@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1914D524524465005DFB5E /* DownloadsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1914D424524465005DFB5E /* DownloadsObserver.swift */; };
+		6D424C52245112F5008D69A3 /* HelperUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D424C5024510152008D69A3 /* HelperUtil.swift */; };
+		6D424C5424511D1D008D69A3 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D424C5324511D1D008D69A3 /* Writer.swift */; };
+		6D45236E2451F25800951E07 /* DiskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D45236D2451F25800951E07 /* DiskHelper.swift */; };
+		6D4AA7AD244F932B00B35128 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4AA7AC244F932B00B35128 /* main.swift */; };
+		6D609DBD245B610500DC1769 /* IOUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D609DBC245B610500DC1769 /* IOUtil.swift */; };
+		6D609DBF245B6D7D00DC1769 /* IOUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D609DBE245B6D7D00DC1769 /* IOUtil.swift */; };
+		6D6271E4244FA082005ED793 /* HelperConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271E3244FA082005ED793 /* HelperConnection.swift */; };
+		6D6271E7244FAA4C005ED793 /* com.xxmicloxx.ImageWriterHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D4AA7AA244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6D6271EA244FB0FF005ED793 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6271E9244FB0FF005ED793 /* ServiceManagement.framework */; };
+		6D6271EC244FBB69005ED793 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271EB244FBB69005ED793 /* AppProtocol.swift */; };
+		6D6271ED244FBB8C005ED793 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271EB244FBB69005ED793 /* AppProtocol.swift */; };
+		6D6271EF244FBBA5005ED793 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271EE244FBBA5005ED793 /* HelperProtocol.swift */; };
+		6D6271F0244FBBA5005ED793 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271EE244FBBA5005ED793 /* HelperProtocol.swift */; };
+		6D6271F3244FBDB2005ED793 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6271F1244FBDB2005ED793 /* Helper.swift */; };
+		6D6787A62450613E006FC7F5 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6787A52450613E006FC7F5 /* HelperConstants.swift */; };
+		6D6787A72450613E006FC7F5 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6787A52450613E006FC7F5 /* HelperConstants.swift */; };
+		6D85D4A7244CEDBC00F132D7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D85D4A6244CEDBC00F132D7 /* IOKit.framework */; };
+		6D915D9C244F6DD2004DEC9D /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D915D9B244F6DD2004DEC9D /* SecurityFoundation.framework */; };
+		D9F22D6842C1303D259CBAD7 /* DeviceEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FA75F664843A6628120E57 /* DeviceEnumerator.swift */; };
+		D9F4E6CBCFC8E74FC57EAB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F1C9D9BA4C2415EB41295F /* Assets.xcassets */; };
+		D9F5F2E9C23CDE2BF5FDBDF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC97E4DC891E3D80F8779F /* ViewController.swift */; };
+		D9F72389715BADCD64448256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F96F58174DEF7402985629 /* AppDelegate.swift */; };
+		D9F980DD6B3C4601DC14185F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FE5921033C924097F5437D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D6271E5244FAA48005ED793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9FC0E6EBD69026E19F3DAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D4AA7A9244F932B00B35128;
+			remoteInfo = com.xxmicloxx.ImageWriterHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D4AA7A8244F932B00B35128 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6D6271DD244F9773005ED793 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				6D6271E7244FAA4C005ED793 /* com.xxmicloxx.ImageWriterHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D915DB2244F8D26004DEC9D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D915DC6244F8DD2004DEC9D /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D153E6D244F92BF00FA8458 /* HelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		6D153E6E244F92BF00FA8458 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		6D153E6F244F92BF00FA8458 /* HelperAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		6D153E70244F92BF00FA8458 /* HelperConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		6D153E71244F92BF00FA8458 /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		6D153E72244F92BF00FA8458 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
+		6D153E73244F92BF00FA8458 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6D153E74244F92BF00FA8458 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6D153E76244F92BF00FA8458 /* CodesignCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
+		6D153E78244F92BF00FA8458 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		6D153E84244F92D100FA8458 /* CodesignCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
+		6D153E86244F92D100FA8458 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		6D153E88244F92D100FA8458 /* HelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		6D153E89244F92D100FA8458 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		6D153E8A244F92D100FA8458 /* HelperAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		6D153E8B244F92D100FA8458 /* HelperConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		6D153E8C244F92D100FA8458 /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		6D153E8D244F92D100FA8458 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
+		6D153E8E244F92D100FA8458 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6D153E8F244F92D100FA8458 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6D1914D424524465005DFB5E /* DownloadsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsObserver.swift; sourceTree = "<group>"; };
+		6D424C5024510152008D69A3 /* HelperUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUtil.swift; sourceTree = "<group>"; };
+		6D424C5324511D1D008D69A3 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		6D45236D2451F25800951E07 /* DiskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskHelper.swift; sourceTree = "<group>"; };
+		6D4AA7AA244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.xxmicloxx.ImageWriterHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4AA7AC244F932B00B35128 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6D609DBB245B603900DC1769 /* uefi-ntfs.img */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uefi-ntfs.img"; sourceTree = "<group>"; };
+		6D609DBC245B610500DC1769 /* IOUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOUtil.swift; sourceTree = "<group>"; };
+		6D609DBE245B6D7D00DC1769 /* IOUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOUtil.swift; sourceTree = "<group>"; };
+		6D6271E1244F9F20005ED793 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
+		6D6271E2244F9F20005ED793 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		6D6271E3244FA082005ED793 /* HelperConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConnection.swift; sourceTree = "<group>"; };
+		6D6271E8244FAC05005ED793 /* com.xxmicloxx.ImageWriterHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = com.xxmicloxx.ImageWriterHelper.entitlements; sourceTree = "<group>"; };
+		6D6271E9244FB0FF005ED793 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		6D6271EB244FBB69005ED793 /* AppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocol.swift; sourceTree = "<group>"; };
+		6D6271EE244FBBA5005ED793 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		6D6271F1244FBDB2005ED793 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6D6787A52450613E006FC7F5 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		6D85D4A6244CEDBC00F132D7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		6D915D9B244F6DD2004DEC9D /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		6D915DA2244F8D26004DEC9D /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		D9F1C9D9BA4C2415EB41295F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F23CADA5B2660F6F95A4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D9F7A6A9EC7835BBB82AE6A7 /* Tiny Flasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Flasher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F8EBA9A901D57198A0C393 /* ImageWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageWriter.entitlements; sourceTree = "<group>"; };
+		D9F96F58174DEF7402985629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9FA75F664843A6628120E57 /* DeviceEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceEnumerator.swift; sourceTree = "<group>"; };
+		D9FAD4A8A0BB67E5970E0176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9FC97E4DC891E3D80F8779F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D4AA7A7244F932B00B35128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FD29F818075BA8F690DA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6271EA244FB0FF005ED793 /* ServiceManagement.framework in Frameworks */,
+				6D85D4A7244CEDBC00F132D7 /* IOKit.framework in Frameworks */,
+				6D915D9C244F6DD2004DEC9D /* SecurityFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D153E6C244F92BF00FA8458 /* SwiftPrivilegedHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E6D244F92BF00FA8458 /* HelperProtocol.swift */,
+				6D153E6E244F92BF00FA8458 /* Helper-Info.plist */,
+				6D153E6F244F92BF00FA8458 /* HelperAuthorization.swift */,
+				6D153E70244F92BF00FA8458 /* HelperConstants.swift */,
+				6D153E71244F92BF00FA8458 /* HelperAuthorizationRight.swift */,
+				6D153E72244F92BF00FA8458 /* Helper-Launchd.plist */,
+				6D153E73244F92BF00FA8458 /* Helper.swift */,
+				6D153E74244F92BF00FA8458 /* main.swift */,
+			);
+			name = SwiftPrivilegedHelper;
+			path = ImageWriter/SwiftPrivilegedHelper;
+			sourceTree = "<group>";
+		};
+		6D153E75244F92BF00FA8458 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E76244F92BF00FA8458 /* CodesignCheck.swift */,
+			);
+			name = Utility;
+			path = ImageWriter/Utility;
+			sourceTree = "<group>";
+		};
+		6D153E77244F92BF00FA8458 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E78244F92BF00FA8458 /* CodeSignUpdate.sh */,
+			);
+			name = Scripts;
+			path = ImageWriter/Scripts;
+			sourceTree = "<group>";
+		};
+		6D153E83244F92D100FA8458 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E84244F92D100FA8458 /* CodesignCheck.swift */,
+			);
+			name = Utility;
+			path = ImageWriter/Utility;
+			sourceTree = "<group>";
+		};
+		6D153E85244F92D100FA8458 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E86244F92D100FA8458 /* CodeSignUpdate.sh */,
+			);
+			name = Scripts;
+			path = ImageWriter/Scripts;
+			sourceTree = "<group>";
+		};
+		6D153E87244F92D100FA8458 /* SwiftPrivilegedHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6D153E88244F92D100FA8458 /* HelperProtocol.swift */,
+				6D153E89244F92D100FA8458 /* Helper-Info.plist */,
+				6D153E8A244F92D100FA8458 /* HelperAuthorization.swift */,
+				6D153E8B244F92D100FA8458 /* HelperConstants.swift */,
+				6D153E8C244F92D100FA8458 /* HelperAuthorizationRight.swift */,
+				6D153E8D244F92D100FA8458 /* Helper-Launchd.plist */,
+				6D153E8E244F92D100FA8458 /* Helper.swift */,
+				6D153E8F244F92D100FA8458 /* main.swift */,
+			);
+			name = SwiftPrivilegedHelper;
+			path = ImageWriter/SwiftPrivilegedHelper;
+			sourceTree = "<group>";
+		};
+		6D4AA7AB244F932B00B35128 /* ImageWriterHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6D609DBB245B603900DC1769 /* uefi-ntfs.img */,
+				6D6271E8244FAC05005ED793 /* com.xxmicloxx.ImageWriterHelper.entitlements */,
+				6D6271E2244F9F20005ED793 /* Helper-Info.plist */,
+				6D6271E1244F9F20005ED793 /* Helper-Launchd.plist */,
+				6D4AA7AC244F932B00B35128 /* main.swift */,
+				6D6271EE244FBBA5005ED793 /* HelperProtocol.swift */,
+				6D6271F1244FBDB2005ED793 /* Helper.swift */,
+				6D424C5024510152008D69A3 /* HelperUtil.swift */,
+				6D424C5324511D1D008D69A3 /* Writer.swift */,
+				6D45236D2451F25800951E07 /* DiskHelper.swift */,
+				6D609DBC245B610500DC1769 /* IOUtil.swift */,
+			);
+			path = ImageWriterHelper;
+			sourceTree = "<group>";
+		};
+		6D85D4A5244CEDBC00F132D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D6271E9244FB0FF005ED793 /* ServiceManagement.framework */,
+				6D153E77244F92BF00FA8458 /* Scripts */,
+				6D153E6C244F92BF00FA8458 /* SwiftPrivilegedHelper */,
+				6D153E85244F92D100FA8458 /* Scripts */,
+				6D153E87244F92D100FA8458 /* SwiftPrivilegedHelper */,
+				6D153E75244F92BF00FA8458 /* Utility */,
+				6D153E83244F92D100FA8458 /* Utility */,
+				6D915D9B244F6DD2004DEC9D /* SecurityFoundation.framework */,
+				6D85D4A6244CEDBC00F132D7 /* IOKit.framework */,
+				6D915DA2244F8D26004DEC9D /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9F2ED3096FFD3A4E1685064 = {
+			isa = PBXGroup;
+			children = (
+				6D6787A52450613E006FC7F5 /* HelperConstants.swift */,
+				6D4AA7AB244F932B00B35128 /* ImageWriterHelper */,
+				D9FD1CA5E36FE1283705E5F8 /* Products */,
+				D9FB96C89852C8473EED9278 /* ImageWriter */,
+				6D85D4A5244CEDBC00F132D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9FB96C89852C8473EED9278 /* ImageWriter */ = {
+			isa = PBXGroup;
+			children = (
+				D9F23CADA5B2660F6F95A4A4 /* Info.plist */,
+				D9F1C9D9BA4C2415EB41295F /* Assets.xcassets */,
+				D9F8EBA9A901D57198A0C393 /* ImageWriter.entitlements */,
+				D9F96F58174DEF7402985629 /* AppDelegate.swift */,
+				D9FE5921033C924097F5437D /* Main.storyboard */,
+				D9FC97E4DC891E3D80F8779F /* ViewController.swift */,
+				D9FA75F664843A6628120E57 /* DeviceEnumerator.swift */,
+				6D6271E3244FA082005ED793 /* HelperConnection.swift */,
+				6D6271EB244FBB69005ED793 /* AppProtocol.swift */,
+				6D1914D424524465005DFB5E /* DownloadsObserver.swift */,
+				6D609DBE245B6D7D00DC1769 /* IOUtil.swift */,
+			);
+			path = ImageWriter;
+			sourceTree = "<group>";
+		};
+		D9FD1CA5E36FE1283705E5F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F7A6A9EC7835BBB82AE6A7 /* Tiny Flasher.app */,
+				6D4AA7AA244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D4AA7A9244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D4AA7AE244F932B00B35128 /* Build configuration list for PBXNativeTarget "com.xxmicloxx.ImageWriterHelper" */;
+			buildPhases = (
+				6D4AA7A6244F932B00B35128 /* Sources */,
+				6D4AA7A7244F932B00B35128 /* Frameworks */,
+				6D4AA7A8244F932B00B35128 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.xxmicloxx.ImageWriterHelper;
+			productName = ImageWriterHelper;
+			productReference = 6D4AA7AA244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		D9F8A930BDA8EDFB1E6C2E23 /* Tiny Flasher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FCEC3064D5AC8065C9D796 /* Build configuration list for PBXNativeTarget "Tiny Flasher" */;
+			buildPhases = (
+				D9F52908C0F48F36772F48FB /* Sources */,
+				D9FD29F818075BA8F690DA45 /* Frameworks */,
+				D9FA9EE214186D974771BB3C /* Resources */,
+				6D915DB2244F8D26004DEC9D /* Embed App Extensions */,
+				6D915DC6244F8DD2004DEC9D /* Embed XPC Services */,
+				6D6271DD244F9773005ED793 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D6271E6244FAA48005ED793 /* PBXTargetDependency */,
+			);
+			name = "Tiny Flasher";
+			productName = ImageWriter;
+			productReference = D9F7A6A9EC7835BBB82AE6A7 /* Tiny Flasher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9FC0E6EBD69026E19F3DAC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = xxmicloxx;
+				TargetAttributes = {
+					6D4AA7A9244F932B00B35128 = {
+						CreatedOnToolsVersion = 11.4.1;
+						DevelopmentTeam = 69FQB9F8CR;
+						ProvisioningStyle = Automatic;
+					};
+					D9F8A930BDA8EDFB1E6C2E23 = {
+						DevelopmentTeam = 69FQB9F8CR;
+					};
+				};
+			};
+			buildConfigurationList = D9F4712D8B2597ACAE543CCD /* Build configuration list for PBXProject "ImageWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F2ED3096FFD3A4E1685064;
+			productRefGroup = D9FD1CA5E36FE1283705E5F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F8A930BDA8EDFB1E6C2E23 /* Tiny Flasher */,
+				6D4AA7A9244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9FA9EE214186D974771BB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F4E6CBCFC8E74FC57EAB50 /* Assets.xcassets in Resources */,
+				D9F980DD6B3C4601DC14185F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D4AA7A6244F932B00B35128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D424C52245112F5008D69A3 /* HelperUtil.swift in Sources */,
+				6D424C5424511D1D008D69A3 /* Writer.swift in Sources */,
+				6D6787A72450613E006FC7F5 /* HelperConstants.swift in Sources */,
+				6D6271ED244FBB8C005ED793 /* AppProtocol.swift in Sources */,
+				6D4AA7AD244F932B00B35128 /* main.swift in Sources */,
+				6D6271F0244FBBA5005ED793 /* HelperProtocol.swift in Sources */,
+				6D6271F3244FBDB2005ED793 /* Helper.swift in Sources */,
+				6D609DBD245B610500DC1769 /* IOUtil.swift in Sources */,
+				6D45236E2451F25800951E07 /* DiskHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F52908C0F48F36772F48FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F72389715BADCD64448256 /* AppDelegate.swift in Sources */,
+				6D6787A62450613E006FC7F5 /* HelperConstants.swift in Sources */,
+				6D6271EC244FBB69005ED793 /* AppProtocol.swift in Sources */,
+				D9F5F2E9C23CDE2BF5FDBDF4 /* ViewController.swift in Sources */,
+				D9F22D6842C1303D259CBAD7 /* DeviceEnumerator.swift in Sources */,
+				6D1914D524524465005DFB5E /* DownloadsObserver.swift in Sources */,
+				6D6271EF244FBBA5005ED793 /* HelperProtocol.swift in Sources */,
+				6D609DBF245B6D7D00DC1769 /* IOUtil.swift in Sources */,
+				6D6271E4244FA082005ED793 /* HelperConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D6271E6244FAA48005ED793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D4AA7A9244F932B00B35128 /* com.xxmicloxx.ImageWriterHelper */;
+			targetProxy = 6D6271E5244FAA48005ED793 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9FE5921033C924097F5437D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FAD4A8A0BB67E5970E0176 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D4AA7AF244F932B00B35128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImageWriterHelper/com.xxmicloxx.ImageWriterHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "ImageWriterHelper/Helper-Info.plist";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/ImageWriterHelper/Helper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/ImageWriterHelper/Helper-Launchd.plist",
+					"-sectcreate",
+					__DATA,
+					__uefi_ntfs_img,
+					"$(SRCROOT)/ImageWriterHelper/uefi-ntfs.img",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.ImageWriterHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D4AA7B0244F932B00B35128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImageWriterHelper/com.xxmicloxx.ImageWriterHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "ImageWriterHelper/Helper-Info.plist";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/ImageWriterHelper/Helper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/ImageWriterHelper/Helper-Launchd.plist",
+					"-sectcreate",
+					__DATA,
+					__uefi_ntfs_img,
+					"$(SRCROOT)/ImageWriterHelper/uefi-ntfs.img",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.ImageWriterHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D9F12125821CA8127CFAB9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageWriter/ImageWriter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = ImageWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.ImageWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D9F15AA15A3E307B300826AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9F3EAEE089C030FFEAFF1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageWriter/ImageWriter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = ImageWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.ImageWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D9F483C9ECC70AFF197EAB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D4AA7AE244F932B00B35128 /* Build configuration list for PBXNativeTarget "com.xxmicloxx.ImageWriterHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D4AA7AF244F932B00B35128 /* Debug */,
+				6D4AA7B0244F932B00B35128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F4712D8B2597ACAE543CCD /* Build configuration list for PBXProject "ImageWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F15AA15A3E307B300826AB /* Debug */,
+				D9F483C9ECC70AFF197EAB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FCEC3064D5AC8065C9D796 /* Build configuration list for PBXNativeTarget "Tiny Flasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F3EAEE089C030FFEAFF1E9 /* Debug */,
+				D9F12125821CA8127CFAB9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9FC0E6EBD69026E19F3DAC8 /* Project object */;
+}
