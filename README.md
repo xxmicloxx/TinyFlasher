@@ -23,3 +23,5 @@ You can download the helper file required for the following steps [here](https:/
 Now, drag `Tiny Flasher.app` from the `Products` folder in Xcode to the terminal, which will paste the path to the file. Insert another space, then drag `ImageWriter/Info.plist` from Xcode into the terminal. Add another space and drag `ImageWriterHelper/Helper-Info.plist` to the terminal. Now, press return.
 
 The utility will change the information in the plist files and therefore allow you to run your own builds using your own signature. After rebuilding the project once more, you should now be able to run your own builds.
+
+Please keep in mind that, **in order for your changes to the helper tool to have effect, you need to update the helper version in `HelperConstants.swift` after every change**. If you don't do this, the helper won't be updated.
