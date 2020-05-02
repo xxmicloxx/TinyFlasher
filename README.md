@@ -1,4 +1,4 @@
-# TinyFlasher
+# Tiny Flasher
 A simple and tiny flashing utility for OS X
 
 ## Features
@@ -18,6 +18,6 @@ Afterwards, you need to change the signature info in `Helper-Info.plist` and `In
 
 You can download the helper file required for the following steps [here](https://developer.apple.com/library/archive/samplecode/SMJobBless/Listings/SMJobBlessUtil_py.html). In order to use the tool, first type `./SMJobBlessUtil.py setreq ` in a terminal in the directory of the downloaded file (notice the space after `setreq`).
 
-Now, drag `Tiny Flasher.app` from the `Products` folder in Xcode to the terminal, which will paste the path to the file into the terminal. Insert another space, then drag `ImageWriter/Info.plist` from Xcode into the terminal. Add another space and drag `ImageWriterHelper/Helper-Info.plist` to the terminal. Now, press return.
+Now, drag `Tiny Flasher.app` from the `Products` folder in Xcode to the terminal, which will paste the path to the file. Insert another space, then drag `ImageWriter/Info.plist` from Xcode into the terminal. Add another space and drag `ImageWriterHelper/Helper-Info.plist` to the terminal. Now, press return.
 
 The utility will change the information in the plist files and therefore allow you to run your own builds using your own signature. After rebuilding the project once more, you should now be able to run your own builds.
