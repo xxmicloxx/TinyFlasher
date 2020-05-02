@@ -14,7 +14,7 @@ A simple and tiny flashing utility for OS X
 Downloads can be found on the [releases](https://github.com/xxmicloxx/TinyFlasher/releases) page.
 
 ## Building
-In order to use your own build of the app, you first need to remove the helper tool. This is because the app signature is checked whenever you want to access the helper, and since you cannot build using my signature, you will be denied access. You can remove the old helper tool by simply running the `uninstallHelper.command` file in this repo.
+In order to use your own build of the app, you first need to uninstall the helper tool. This is because the app signature is checked whenever you want to access the helper, and since you cannot build using my signature, you will be denied access. You can remove the old helper tool by simply running the `uninstallHelper.command` file in this repo.
 
 Afterwards, you need to change the signature info in `Helper-Info.plist` and `Info.plist`. This can be done automatically using `SMJobBlessUtil.py` provided by Apple themselves. However, before you do that, make sure that you have built the app in Xcode at least once - do not run the built app yet, though. Also make sure that you've selected a valid signing certificate for both the Tiny Flasher target and the helper target in Xcode.
 
