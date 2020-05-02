@@ -1,6 +1,8 @@
 # Tiny Flasher
 A simple and tiny flashing utility for OS X
 
+![screenshot](docs/img/screenshot.png?raw=1)
+
 ## Features
 * Tiny
 * Flashes USB and SD card images directly to disks
