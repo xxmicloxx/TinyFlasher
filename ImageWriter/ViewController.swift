@@ -9,7 +9,7 @@ import Cocoa
 import SecurityFoundation
 
 
-class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, DownloadsObserverDelegate {
+class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, DownloadsObserverDelegate, NSDraggingDestination, NSWindowDelegate {
     
     private var downloadsObserver: DownloadsObserver!
     private var devEnumerator: DeviceEnumerator!
@@ -50,6 +50,8 @@ class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, D
     @IBOutlet var advancedOptionsConstraint: NSLayoutConstraint!
     @IBOutlet weak var advancedOptionsDisclosure: NSButton!
     
+    let acceptedFileTypes: [String] = ["img", "iso"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,6 +75,9 @@ class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, D
         super.viewDidAppear()
 
         initEnumerator()
+        
+        self.view.window!.delegate = self
+        self.view.window!.registerForDraggedTypes([.fileURL])
     }
     
     override func viewWillDisappear() {
@@ -190,6 +195,83 @@ class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, D
         updateUIState()
     }
     
+    func prepareForDragOperation(_ sender: NSDraggingInfo) -> Bool {
+        let pboard = sender.draggingPasteboard
+        // check if url is volume or image
+        
+        guard let objs = pboard.readObjects(forClasses: [NSURL.self], options: nil) else {
+            return false
+        }
+        
+        for urlObj in objs {
+            guard let url = urlObj as? URL else {
+                continue
+            }
+            
+            if !url.isFileURL {
+                continue
+            }
+            
+            if acceptedFileTypes.contains(url.pathExtension.lowercased()) {
+                // accept the file
+                return true
+            }
+            
+            if devEnumerator.isDiskMount(url) {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
+        let canRead = sender.draggingPasteboard.canReadObject(forClasses: [NSURL.self], options: nil)
+        
+        if canRead {
+            return .generic;
+        }
+        
+        return [];
+    }
+    
+    func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
+        let pboard = sender.draggingPasteboard
+        
+        guard let objs = pboard.readObjects(forClasses: [NSURL.self], options: nil) else {
+            return false
+        }
+        
+        for urlObj in objs {
+            guard let url = urlObj as? URL else {
+                continue
+            }
+            
+            if !url.isFileURL {
+                continue
+            }
+            
+            if acceptedFileTypes.contains(url.pathExtension.lowercased()) {
+                // accept the file
+                self.currentFile = url
+                continue
+            }
+            
+            if let device = devEnumerator.getDevice(fromMount: url) {
+                guard let idx = driveMenu.items.firstIndex(where: { (item: NSMenuItem) -> Bool in
+                    (item.representedObject as! DeviceEnumerator.Device) == device
+                }) else {
+                    continue
+                }
+                
+                driveDropDown.selectItem(at: idx)
+                continue
+            }
+        }
+        
+        return true
+    }
+    
     func onDownloadsChanged() {
         resetImageMenu()
     }
@@ -229,7 +311,7 @@ class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, D
                 return in1Props.creationDate! >= in2Props.creationDate!
             })
 
-            let filteredFiles = files.filter { ["img", "iso"].contains($0.pathExtension.lowercased()) }
+            let filteredFiles = files.filter { acceptedFileTypes.contains($0.pathExtension.lowercased()) }
             
             for file in filteredFiles.prefix(5) {
                 let resources = try file.resourceValues(forKeys: [.fileSizeKey, .nameKey])
@@ -678,5 +760,3 @@ class ViewController: NSViewController, DeviceEnumeratorDelegate, AppProtocol, D
         }
     }
 }
-
-

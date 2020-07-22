@@ -70,6 +70,67 @@ class DeviceEnumerator {
         DARegisterDiskAppearedCallback(self.session, rawDescriptor, DeviceEnumerator.rawDiskAppearedCallback, rawSelf)
         DARegisterDiskDisappearedCallback(self.session, rawDescriptor, DeviceEnumerator.rawDiskDisappearedCallback, rawSelf)
     }
+    
+    func isDiskMount(_ mount: URL) -> Bool {
+        return DADiskCreateFromVolumePath(nil, session, mount as CFURL) != nil
+    }
+    
+    func getDevice(fromMount mount: URL) -> Device? {
+        guard let disk = DADiskCreateFromVolumePath(nil, session, mount as CFURL) else {
+            // we done goofed
+            return nil
+        }
+        
+        // do the parent check
+        let media = DADiskCopyIOMedia(disk)
+        defer { IOObjectRelease(media) }
+        
+        var actualMedia: io_registry_entry_t = media
+        IOObjectRetain(actualMedia)
+        defer { IOObjectRelease(actualMedia) }
+        
+        var parent: io_registry_entry_t = media
+        var result = IORegistryEntryGetParentEntry(parent, kIOServicePlane, &parent)
+        while result == kIOReturnSuccess {
+            var hadIOStorage = false
+            
+            var classStr: String? = IOObjectCopyClass(parent).takeRetainedValue() as String
+            repeat {
+                if classStr == kIOMediaClass {
+                    // we found a parent
+                    let namePtr = DADiskGetBSDName(disk)!
+                    let name = String(cString: namePtr)
+                    print("Got parent to dragged volume \(name)")
+                    
+                    IOObjectRelease(actualMedia)
+                    actualMedia = parent
+                    IOObjectRetain(actualMedia)
+                } else if classStr == kIOStorageClass {
+                    hadIOStorage = true
+                    break
+                }
+                
+                classStr = IOObjectCopySuperclassForClass(classStr as CFString?)?.takeRetainedValue() as String?
+            } while classStr != nil
+            
+            if !hadIOStorage {
+                // we are done here
+                IOObjectRelease(parent)
+                break
+            }
+            
+            let oldParent = parent
+            result = IORegistryEntryGetParentEntry(parent, kIOServicePlane, &parent)
+            IOObjectRelease(oldParent)
+        }
+        
+        // we should now have the actual parent device
+        guard let actualDisk = DADiskCreateFromIOMedia(nil, session, actualMedia) else {
+            return nil
+        }
+        
+        return Device(fromDisk: actualDisk)
+    }
 
     private func onDiskAppeared(_ disk: DADisk) {
         // check if this is APFS
